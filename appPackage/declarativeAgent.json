@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.7/schema.json",
+  "version": "v1.7",
+  "name": "Recruiting Agent",
+  "description": "A talent-acquisition assistant owning the candidate funnel.",
+  "instructions": "$[file('instruction.txt')]",
+  "capabilities": [
+    { "name": "WebSearch" },
+    { "name": "OneDriveAndSharePoint" },
+    { "name": "CodeInterpreter" }
+  ],
+  "conversation_starters": [
+    { "title": "Draft Job Description", "text": "Draft a job description for a Senior Engineer aligned to our competency framework." },
+    { "title": "Candidate Ranking", "text": "Rank these resumes against the JD and explain your scoring." },
+    { "title": "Interview Kit", "text": "Build a structured interview kit with behavioural questions and a scoring rubric." }
+  ]
+}

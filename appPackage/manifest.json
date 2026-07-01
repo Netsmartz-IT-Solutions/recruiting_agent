@@ -1,0 +1,37 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.27/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.27",
+    "version": "1.0.0",
+    "id": "a4f728c2-4444-46f9-8d14-3c6ab5576aa4",
+    "developer": {
+        "name": "Enterprise AI Team",
+        "websiteUrl": "https://www.example.com",
+        "privacyUrl": "https://www.example.com/privacy",
+        "termsOfUseUrl": "https://www.example.com/terms"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "Recruiting Agent",
+        "full": "Recruiting / Talent Agent"
+    },
+    "description": {
+       "short": "Talent acquisition assistant",
+       "full": "Talent acquisition assistant"
+    },
+    "accentColor": "#005A9E",
+    "copilotAgents": {
+        "declarativeAgents": [
+            {
+                "id": "declarativeAgent",
+                "file": "declarativeAgent.json"
+            }
+        ]
+    },
+    "permissions": [
+        "identity"
+    ],
+    "validDomains": []
+}
