@@ -1,0 +1,38 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.21/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.21",
+    "version": "1.0.0",
+    "id": "38d26513-e607-44fb-812e-66d6ab9d2db6",
+    "developer": {
+        "name": "Netsmartz",
+        "websiteUrl": "https://www.netsmartz.com",
+        "privacyUrl": "https://www.netsmartz.com/privacy-policy/",
+        "termsOfUseUrl": "https://www.netsmartz.com/terms/agent-marketplace/"
+    },
+    "name": {
+        "short": "NTZ Recruiting Copilot",
+        "full": "NTZ Recruiting Copilot"
+    },
+    "description": {
+        "short": "Drafts job descriptions, interview kits, scorecards, and recruiting documents.",
+        "full": "NTZ Recruiting Copilot supports the recruiting lifecycle from requisition through hiring recommendation. Grounded in your organization's SharePoint and OneDrive hiring playbooks, competency frameworks, and recruiting templates, it drafts job descriptions, researches publicly available candidate and market information, builds structured interview kits, generates evaluation scorecards, consolidates interviewer feedback into hiring recommendations, creates recruiting outreach templates, and produces professionally formatted recruiting documents. It only accesses content the signed-in user is authorized to view within Microsoft 365 and supports recruiters and hiring managers with grounded, tenant-specific guidance. Requires a Microsoft 365 Copilot license per user. Built by Netsmartz."
+    },
+    "icons": {
+        "outline": "outline.png",
+        "color": "color.png"
+    },
+    "accentColor": "#2E5E4E",
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [],
+    "copilotAgents": {
+        "declarativeAgents": [
+            {
+                "id": "ntzRecruitingCopilot",
+                "file": "recruitingDeclarativeAgent.json"
+            }
+        ]
+    }
+}

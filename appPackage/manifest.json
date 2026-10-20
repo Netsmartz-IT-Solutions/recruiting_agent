@@ -1,37 +1,38 @@
 {
-    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.27/MicrosoftTeams.schema.json",
-    "manifestVersion": "1.27",
-    "version": "1.0.0",
-    "id": "a4f728c2-4444-46f9-8d14-3c6ab5576aa4",
-    "developer": {
-        "name": "Enterprise AI Team",
-        "websiteUrl": "https://www.example.com",
-        "privacyUrl": "https://www.example.com/privacy",
-        "termsOfUseUrl": "https://www.example.com/terms"
-    },
-    "icons": {
-        "color": "color.png",
-        "outline": "outline.png"
-    },
-    "name": {
-        "short": "Recruiting Agent",
-        "full": "Recruiting / Talent Agent"
-    },
-    "description": {
-       "short": "Talent acquisition assistant",
-       "full": "Talent acquisition assistant"
-    },
-    "accentColor": "#005A9E",
-    "copilotAgents": {
-        "declarativeAgents": [
-            {
-                "id": "declarativeAgent",
-                "file": "declarativeAgent.json"
-            }
-        ]
-    },
-    "permissions": [
-        "identity"
-    ],
-    "validDomains": []
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.21/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.21",
+  "version": "1.0.0",
+  "id": "${{TEAMS_APP_ID}}",
+  "developer": {
+    "name": "Netsmartz",
+    "websiteUrl": "https://www.netsmartz.com",
+    "privacyUrl": "https://www.netsmartz.com/privacy-policy/",
+    "termsOfUseUrl": "https://www.netsmartz.com/terms/agent-marketplace/"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "NTZ Recruiting Copilot",
+    "full": "NTZ Recruiting Copilot"
+  },
+  "description": {
+    "short": "Drafts job descriptions, interview kits, scorecards, and recruiting documents.",
+    "full": "NTZ Recruiting Copilot supports the recruiting lifecycle from requisition through hiring recommendation. Grounded in your organization's SharePoint and OneDrive hiring playbooks, competency frameworks, and recruiting templates, it drafts job descriptions, researches publicly available candidate and market information, builds structured interview kits, generates evaluation scorecards, consolidates interviewer feedback into hiring recommendations, creates recruiting outreach templates, and produces professionally formatted recruiting documents. It only accesses content the signed-in user is authorized to view within Microsoft 365 and supports recruiters and hiring managers with grounded, tenant-specific guidance. Requires a Microsoft 365 Copilot license per user. Built by Netsmartz."
+  },
+  "accentColor": "#2E5E4E",
+  "copilotAgents": {
+    "declarativeAgents": [
+      {
+        "id": "ntzRecruitingCopilot",
+        "file": "recruitingDeclarativeAgent.json"
+      }
+    ]
+  },
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": []
 }

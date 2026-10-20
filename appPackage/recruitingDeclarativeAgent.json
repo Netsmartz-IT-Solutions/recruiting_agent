@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.7/schema.json",
+  "version": "v1.7",
+  "name": "NTZ Recruiting Copilot",
+  "description": "Multi-tenant talent acquisition copilot. Drafts job descriptions, builds interview kits, researches candidates, and generates recruiting documents using SharePoint grounding.",
+  "instructions": "$[file('instruction.txt')]",
+  "capabilities": [
+    {
+      "name": "WebSearch"
+    },
+    {
+      "name": "OneDriveAndSharePoint"
+    },
+    {
+      "name": "CodeInterpreter"
+    },
+    {
+      "name": "GraphicArt"
+    }
+  ],
+  "conversation_starters": [
+    {
+      "title": "Draft a Job Description",
+      "text": "Draft a job description using our JD template and competency framework. Use placeholders for department, level, and salary unless I specify them."
+    },
+    {
+      "title": "Research a Candidate",
+      "text": "Research publicly available professional information about this candidate and summarize it against the role's competency framework."
+    },
+    {
+      "title": "Build an Interview Kit",
+      "text": "Build a structured interview kit with competency-based questions, an evaluation rubric, and interviewer guidance using our interview template."
+    },
+    {
+      "title": "Generate a Scorecard",
+      "text": "Generate a candidate scorecard and consolidate interviewer feedback into a structured hiring recommendation for recruiter review."
+    },
+    {
+      "title": "Generate Outreach Message",
+      "text": "Generate a professional outreach or screening message template for this candidate and role."
+    },
+    {
+      "title": "Generate Recruiting Document",
+      "text": "Generate a professionally formatted .docx version of the job description, interview kit, scorecard, or recruiting report discussed in this conversation."
+    },
+    {
+      "title": "Generate Recruiting Cover",
+      "text": "Generate a professional cover page or header image for this job description, interview kit, or recruiting report using GraphicArt."
+    }
+  ]
+}
+
